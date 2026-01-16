@@ -3,41 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Operasi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CodeX OS - Next Generation Operating System</title>
+    <meta name="description" content="Experience the future with CodeX - a revolutionary operating system designed for power users and developers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-        <h1>Code<span style="color: yellow;">X</span></h1> 
-        </div>
-        <div class="navbar-con">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- Particle Background -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Code<span class="highlight">X</span></h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#download" class="nav-link">Download</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Welcome to <span class="gradient-text">Code<span class="highlight">X</span></span>
+                </h1>
+                <p class="hero-subtitle">The Next Generation Operating System</p>
+                <p class="hero-description">
+                    Experience unprecedented performance, security, and innovation. 
+                    CodeX is designed for developers, power users, and anyone who demands excellence.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <span>Download Now</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span>Learn More</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <img src="image.png" alt="CodeX Operating System Interface">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
 
-<div>
-    <div>
-    <div class="container mt-5" style="color: whitesmoke; padding-top: 25vh;">
-        <h2>Welcome to Sistem Operasi Page</h2>
-        <p style="color: yellow;">This is the llink Gdrive</p>
-        <button type="button" class="btn btn-warning"><a href="https://www.youtube.com/watch?v=n5ICUToYoIw" style="color: rgb(58, 2, 2); text-decoration: none;">Gdrive</a></button>
-    </div>
-    </div>
-</div>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need in a modern operating system</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-delay="0">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized kernel and resource management for blazing fast performance</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="100">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Ultra Secure</h3>
+                    <p>Advanced security features with built-in encryption and privacy controls</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="200">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful UI</h3>
+                    <p>Modern, customizable interface with stunning visual effects</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="300">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Developer Tools</h3>
+                    <p>Comprehensive suite of development tools and environments</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="400">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Cloud Integration</h3>
+                    <p>Seamless cloud synchronization and collaboration features</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-delay="500">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Auto Updates</h3>
+                    <p>Automatic updates with zero downtime and rollback support</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div>
-    
-</div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See CodeX in Action</h2>
+                <p class="section-subtitle">Explore the beautiful interface and powerful features</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="image.png" alt="CodeX Desktop">
+                    <div class="gallery-overlay">
+                        <h4>Modern Desktop</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-delay="100">
+                    <img src="image2.png" alt="CodeX Features">
+                    <div class="gallery-overlay">
+                        <h4>Powerful Features</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-delay="200">
+                    <img src="code.png" alt="CodeX Development">
+                    <div class="gallery-overlay">
+                        <h4>Developer Tools</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text" data-aos="fade-right">
+                    <h2 class="section-title">Ready to Experience CodeX?</h2>
+                    <p class="section-subtitle">Download now and join thousands of satisfied users</p>
+                    <div class="download-features">
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Free and Open Source</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Regular Updates</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Community Support</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Extensive Documentation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card" data-aos="fade-left">
+                    <div class="download-card-header">
+                        <h3>CodeX OS v2.0</h3>
+                        <span class="version-badge">Latest</span>
+                    </div>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">Size:</span>
+                            <span class="info-value">2.4 GB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Release:</span>
+                            <span class="info-value">January 2026</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Architecture:</span>
+                            <span class="info-value">64-bit</span>
+                        </div>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=n5ICUToYoIw" class="btn btn-download">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download from Google Drive</span>
+                    </a>
+                    <p class="download-note">System Requirements: 4GB RAM, 20GB Storage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Code<span class="highlight">X</span></h3>
+                    <p>The next generation operating system for developers and power users.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeX Operating System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
-<footer>
-    
-</footer>
 </html>
